@@ -3,3 +3,4 @@ aiohttp==3.9.5
 instagrapi==2.1.2
 aiofiles==23.2.1
 python-dotenv==1.0.1
+Pillow==10.4.0
