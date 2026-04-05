@@ -1,6 +1,0 @@
-aiogram==3.7.0
-pydantic==2.12.0
-pydantic-core==2.45.0
-instagrapi==2.1.2
-aiofiles==23.2.1
-python-dotenv==1.0.1
