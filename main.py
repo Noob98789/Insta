@@ -24,6 +24,7 @@ from pathlib import Path
 import aiofiles
 from aiogram import Bot, Dispatcher, F
 from aiogram.enums import ParseMode
+from aiogram.client.default import DefaultBotProperties
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
@@ -61,7 +62,7 @@ DB_FILE       = os.getenv("DB_FILE", "db.json")
 if not BOT_TOKEN or not ADMIN_ID:
     raise RuntimeError("BOT_TOKEN and ADMIN_ID are required in environment variables.")
 
-bot     = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
+bot     = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 storage = MemoryStorage()
 dp      = Dispatcher(storage=storage)
 
