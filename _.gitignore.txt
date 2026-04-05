@@ -1,0 +1,6 @@
+.env
+db.json
+__pycache__/
+*.pyc
+*.pyo
+/tmp/
