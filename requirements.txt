@@ -1,4 +1,0 @@
-aiogram==3.7.0
-instagrapi==2.1.2
-aiofiles==23.2.1
-python-dotenv==1.0.1
